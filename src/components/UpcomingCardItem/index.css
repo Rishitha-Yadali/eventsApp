@@ -1,0 +1,46 @@
+.upcoming-event-item{
+ 
+    border:1px solid #dcdada;
+    padding:10px;
+    border-radius:7px;
+    width:280px;
+    margin-bottom:10px;
+
+}
+.upcoming-image{
+    width:100%;
+    border-radius:7px;
+    height:180px;
+    object-fit: cover;
+   
+}
+.upcoming-image-container{
+    position:relative;
+}
+.formatted-date{
+    position:absolute;
+    bottom:-5px;
+    right:0;
+    left:0;
+    color:#e6e1e1;
+    background-color: #252525a5;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding:8px 5px;
+    padding-left:18px;
+    
+    font-size:10px;
+}
+.upcoming-event-name{
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:0px;
+}
+.upcoming-event-text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:11px;
+    color:#abaaaa;
+    font-weight:500;
+}
