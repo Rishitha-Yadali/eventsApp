@@ -1,33 +1,32 @@
-/* Container for the login and signup form */
-.container {
+
+
+.login-container {
     width: 300px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
   }
   
-  h2 {
+  .login-container h2 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
   }
   
-  form div {
+  .login-form {
     margin-bottom: 15px;
   }
   
-  label {
+  .label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
     color: #555;
   }
   
-  input[type="email"],
-  input[type="password"],
-  input[type="text"] {
+  .form-input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -35,21 +34,21 @@
     background-color: #f2f2f2;
   }
   
-  input[type="email"]:focus,
-  input[type="password"]:focus,
-  input[type="text"]:focus {
+.form-input:focus {
     outline: none;
     border-color: #4CAF50;
   }
   
-  button {
-    width: 100%;
+  .login-button-form{
+    width: 106%;
     padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top:25px;
+    font-size:15px;
   }
   
   
@@ -61,17 +60,17 @@
     text-align: center;
   }
   
-  p {
+  .signup-msg {
     text-align: center;
     margin-top: 20px;
   }
   
-  p a {
+  .signup-msg a {
     color: #4CAF50;
     text-decoration: none;
   }
   
-  p a:hover {
+  .signup-msg a:hover {
     text-decoration: underline;
   }
-  
+   

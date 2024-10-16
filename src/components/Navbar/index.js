@@ -57,10 +57,10 @@ class Navbar extends Component {
                     </div>
                   </div>
                   <div className="sm-nav-buttons-container">
-                    <IoIosSearch className="sm-nav-image" size={35} style={{ strokeWidth: 20 }}/>
-                    <FaHeart className="sm-nav-image"  size={27}/>
+                    <IoIosSearch className="sm-nav-image" size={25} style={{ strokeWidth: 10 }}/>
+                    <FaHeart className="sm-nav-image"  size={22}/>
                  
-                    <RiContactsLine className="sm-nav-image" size={27} style={{ strokeWidth: 1 }}/>
+                    <RiContactsLine className="sm-nav-image" size={20} style={{ strokeWidth: 1 }}/>
                   </div>   
                 </div>
                 <ul className="sm-nav-links-container">

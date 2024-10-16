@@ -7,7 +7,7 @@ import NotFound from "./components/NotFound"
 import {Component} from "react"
 
 const isAuthenticated = () => {
-  return localStorage.getItem("authenticated") === "true";
+  return localStorage.getItem("isAuthenticated") === "true";
 };
 
 

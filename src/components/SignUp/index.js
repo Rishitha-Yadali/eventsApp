@@ -1,19 +1,7 @@
-// import {Component} from "react"
-// import "./index.css"
-
-// class SignUp extends Component{
-//     render(){
-//         return(
-//            <div>SignUp Route</div>
-//         )
-//     }
-// }
-
-// export default SignUp
-
 import React, { Component } from "react";
 import { Link, Navigate } from "react-router-dom";
 import "./index.css";
+
 
 class SignupPage extends Component {
   state = {
@@ -21,64 +9,93 @@ class SignupPage extends Component {
     username: "",
     password: "",
     error: "",
-    isAuthenticated: false,
+    isAuthenticated: false
   };
-
-  handleSignup = (e) => {
-    e.preventDefault();
-    const { email, username, password } = this.state;
-
-    // Simulate signup process
-    if (email && username && password) {
-      // Simulate saving user data and authenticating them
-      localStorage.setItem("authenticated", "true"); // Automatically log in the user
-      this.setState({ isAuthenticated: true });
-    } else {
+  onChangeEmail = (event) => {
+    this.setState({ email: event.target.value });
+  };
+  onChangeUsername = (event) => {
+    this.setState({ username: event.target.value });
+  };
+  onChangePassword = (event) => {
+    this.setState({ password: event.target.value });
+  };
+  handleSignup = (event) => {
+    event.preventDefault();
+    const{ email, username, password}=this.state
+    const userData={email, username, password}
+    
+    if (!email ||!username ||!password) {
       this.setState({ error: "All fields are required" });
+      return;
     }
+    else{
+      const checkUserRegistrationStatus=localStorage.getItem("userRegistered")  
+      if(checkUserRegistrationStatus==='true'){
+        this.setState({error: "User already registered"})
+        return
+      }
+      else{
+      localStorage.setItem("userRegistered","true")
+      localStorage.setItem("userCredentials",JSON.stringify(userData))
+      localStorage.setItem("isAuthenticated","true")
+      this.setState({
+        isAuthenticated:true,
+        email:"",
+        username:"",
+        password:"",
+       
+      })
+    }
+  
+  }
+    
+    
   };
 
   render() {
     const { email, username, password, error, isAuthenticated } = this.state;
 
-    // If authenticated, navigate to the home route
     if (isAuthenticated) {
       return <Navigate to="/" />;
     }
 
     return (
-      <div className="container">
+      <div className="signup-container">
         <h2>Signup</h2>
         {error && <div className="error">{error}</div>}
         <form onSubmit={this.handleSignup}>
-          <div>
-            <label>Email:</label>
+          <div className="signup-form">
+            <label className="signup-label">Email:</label>
             <input
+              className="signup-input"
               type="email"
               value={email}
-              onChange={(e) => this.setState({ email: e.target.value })}
+              onChange={this.onChangeEmail}
             />
           </div>
           <div>
-            <label>Username:</label>
+            <label className="signup-label">Username:</label>
             <input
+              className="signup-input"
               type="text"
               value={username}
-              onChange={(e) => this.setState({ username: e.target.value })}
+              onChange={this.onChangeUsername}
             />
           </div>
           <div>
-            <label>Password:</label>
+            <label className="signup-label">Password:</label>
             <input
+              className="signup-input"
               type="password"
               value={password}
-              onChange={(e) => this.setState({ password: e.target.value })}
+              onChange={this.onChangePassword}
             />
           </div>
-          <button type="submit">Signup</button>
+          <button type="submit" className="signup-button-form">Signup</button>
         </form>
         <p>
-          Already have an account? <Link to="/login">Login here</Link>
+          Already have an account? <Link className="login" to="/login">Login here</Link>
         </p>
       </div>
     );

@@ -11,6 +11,7 @@ body{
     border-bottom: 1px solid #E0E0E0;
     padding-top:10px;
     margin: auto;
+   
     
    
   }
@@ -27,7 +28,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 700;
-    color: #E53935; 
+    color: #CF2D2D; 
     padding: 10px;
     margin-top:0px;
     }
@@ -316,7 +317,7 @@ body{
 @media screen and (min-width: 768px) and (max-width:998px){
   .navbar-container{
     background-color: #FFFFFF; 
-    height: 110px;
+    height: 92px;
     border-bottom: 1px solid #E0E0E0;
     padding-top:10px;
     margin: auto;
@@ -336,9 +337,9 @@ body{
   .navbar-logo {
   
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 700;
-    color: #E53935; 
+    color: #CF2D2D; 
     padding: 10px;
     margin-top:0px;
     margin-bottom:0px;
@@ -455,26 +456,18 @@ body{
       color:#535353;
       font-weight:500;
       margin-top:0px;
-      font-size:15px;
+      font-size:13px;
       padding-top:0px;
       
     }
     .location-icon, .navigate-icon{
       color:#b6b6b6;
     }
-    .nav-links-container{
-      list-style-type:none;
-      display: flex;
-      padding-left: 0px;
-      gap:25px;
-      margin:auto;
-      margin-top:15px;
-      width:100%;
-    }
+    
     .nav-link{
       text-decoration: none;
       color:#686868;
-      font-size:16px;
+      font-size:14px;
     }
     .sm-nav-top-container{
       display:flex;
@@ -494,21 +487,21 @@ body{
     }
     .sm-nav-links-container{
       display: block;
-      font-size:18px;
+      font-size:16px;
       list-style-type:none;
       display: flex;
       padding-left: 0px;
       gap:25px;
       margin:auto;
-      margin-top:15px;
-      width: 100%;
-      margin-left:50px;
+      margin-top:7px;
+      width: 88%;
+   
     }
 }
 @media screen and (max-width: 768px){
   .navbar-container{
     background-color: #FFFFFF; 
-    height: 100px;
+    height: 92px;
     border-bottom: 1px solid #E0E0E0;
     padding-top:10px;
     margin: auto;
@@ -528,9 +521,9 @@ body{
   .navbar-logo {
   
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 700;
-    color: #E53935; 
+    color: #CF2D2D; 
     padding: 10px;
     margin-top:0px;
     margin-bottom:0px;
@@ -647,7 +640,7 @@ body{
       color:#535353;
       font-weight:500;
       margin-top:0px;
-      font-size:15px;
+      font-size:13px;
       padding-top:0px;
       
     }
@@ -678,6 +671,8 @@ body{
     }
     .sm-nav-image{
       color:#bcb5b5;
+      font-size:500px;
+    
     }
   
     
@@ -693,15 +688,15 @@ body{
       padding-left: 0px;
       gap:25px;
       margin:auto;
-      margin-top:15px;
-      width: 100%;
-      margin-left:50px;
+      margin-top:4px;
+      width: 88%;
+  
     }
 }
 @media (max-width:500px){
   .navbar-container{
     background-color: #FFFFFF; 
-    height: 100px;
+    height: 92px;
     border-bottom: 1px solid #E0E0E0;
     padding-top:10px;
     margin: auto;
@@ -721,9 +716,9 @@ body{
   .navbar-logo {
   
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
+    font-size: 13px;
     font-weight: 700;
-    color: #E53935; 
+    color: #CF2D2D; 
     padding: 10px;
     margin-top:0px;
     margin-bottom:0px;
@@ -840,7 +835,7 @@ body{
       color:#535353;
       font-weight:500;
       margin-top:0px;
-      font-size:15px;
+      font-size:11px;
       padding-top:0px;
       
     }
@@ -886,9 +881,8 @@ body{
       padding-left: 0px;
       gap:25px;
       margin:auto;
-      margin-top:15px;
-      width: 100%;
-      margin-left:50px;
+      margin-top:4px;
+      width: 88%;
     }
 
 }
