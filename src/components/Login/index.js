@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link, Navigate } from "react-router-dom";
 import "./index.css";
-import { is } from "date-fns/locale";
+
 
 class Login extends Component {
   state = {
@@ -29,6 +29,8 @@ class Login extends Component {
     if (user === null) {
       this.setState({
         error: "You're not registered yet. Please create an account to continue.",
+        email:"",
+        password:""
       });
     } else {
       if (!email || !password) {
