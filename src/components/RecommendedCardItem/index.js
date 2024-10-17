@@ -2,7 +2,7 @@ import "./index.css"
 import { TiLocation } from "react-icons/ti";
 const RecommendedCardItem=(props)=>{
     const{eachShow}=props
-    console.log(eachShow)
+  
     const{eventName,cityName,date,weather,distanceKm,imgUrl}=eachShow
     const dateStr = new Date(date);
     const monthNames = [

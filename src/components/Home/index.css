@@ -36,13 +36,17 @@
     white-space:nowrap;   
     margin-left:auto;
 } 
-
+.upcoming-sections{
+    display:flex;
+    justify-content: center;
+}
 
 .recommended-shows-section {
     padding-left: 0px;
     list-style-type: none;
     display: flex;
     gap: 20px;
+    padding-right:10px;
     overflow-x: auto; 
     scroll-behavior: smooth;
     margin-top:0px;
@@ -142,6 +146,7 @@
     .hero-text-container h1{
         font-size:41px;
         font-weight:500;
+        line-height:1.7;
         width:100%;
         margin-top: 0px;;
         margin-bottom: 10px;
@@ -149,6 +154,7 @@
     .hero-text-container p{
         width:85%;
         font-size:15px;
+        line-height:1.7;
         text-align: center;
         margin-top:0px;
         margin: auto;
@@ -207,18 +213,20 @@
 }
 @media screen and (min-width:998px) and (max-width:1150px){
     .hero-text-container h1{
-        font-size:35px;
+        font-size:37px;
         font-weight:500;
         width:100%;
         margin-top: 0px;;
         margin-bottom: 10px;
+        line-height:1.7;
     }
     .hero-text-container p{
         width:85%;
-        font-size:13px;
+        font-size:14px;
         text-align: center;
         margin-top:0px;
         margin: auto;
+        line-height:1.9;
     }
     .sm-text{
         display: none;
@@ -280,13 +288,15 @@
         width:105%;
         margin-top: 0px;;
         margin-bottom: 10px;
+        line-height:1.9;
     }
     .hero-text-container p{
         width:88%;
-        font-size:12px;
+        font-size:13px;
         text-align: center;
         margin-top:0px;
         margin: auto;
+        line-height:1.9;
     }
     .sm-text{
         display: none;
@@ -347,13 +357,15 @@
         width:115%;
         margin-top: 0px;;
         margin-bottom: 10px;
+        line-height:1.9;
     }
     .hero-text-container p{
         width:88%;
-        font-size:12px;
+        font-size:13px;
         text-align: center;
         margin-top:0px;
         margin: auto;
+        line-height:1.9;
     }
     .sm-text{
         display: none;
@@ -409,19 +421,21 @@
 }
 @media screen and (max-width:594px){
     .hero-text-container h1{
-        font-size:21px;
+        font-size:20px;
         font-weight:500;
         width:125%;
         margin-top: 0px;
         margin-bottom: 10px;
+        line-height:2.3;
     }
     .sm-text{
         display:block;
         width:100%;
-        font-size:12px;
+        font-size:13px;
         text-align: center;
         margin-top:0px;
         margin: auto;
+        line-height:2.3;
     }
     .md-text{
         width:100%;
@@ -484,9 +498,10 @@
 
 @media screen and (max-width:431px){
     .hero-text-container h1{
-        font-size:21px;
+        font-size:19px;
         font-weight:500;
         width:125%;
+        line-height:1.8;
         margin-top: 0px;
         margin-bottom: 10px;
     }
@@ -497,6 +512,7 @@
         text-align: center;
         margin-top:0px;
         margin: auto;
+        line-height:2;
     }
     .md-text{
         width:100%;
